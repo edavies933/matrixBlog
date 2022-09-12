@@ -1,0 +1,96 @@
+2022-09-11 13:11:57.573 +02:00  INF  Now listening on: https://localhost:7268
+2022-09-11 13:11:57.735 +02:00  INF  Now listening on: http://localhost:5268
+2022-09-11 13:11:57.745 +02:00  INF  Application started. Press Ctrl+C to shut down.
+2022-09-11 13:11:57.746 +02:00  INF  Hosting environment: Development
+2022-09-11 13:11:57.746 +02:00  INF  Content root path: C:\Users\daviesem\source\repos\Matrix42SimpleBlogProject\Matrix42SimpleBlogProject.Api\
+2022-09-11 13:12:03.150 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/index.html - -
+2022-09-11 13:12:41.943 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 13:12:41.943 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_vs/browserLink - -
+2022-09-11 13:12:41.944 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/index.html - - - 200 - text/html;charset=utf-8 38805.4559ms
+2022-09-11 13:12:42.014 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 71.2928ms
+2022-09-11 13:12:42.084 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 141.5615ms
+2022-09-11 13:12:42.438 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - -
+2022-09-11 13:12:42.949 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 511.6242ms
+2022-09-11 13:13:00.706 +02:00  INF  Request starting HTTP/2 POST https://localhost:7268/api/Blog/Create application/json 101
+2022-09-11 13:13:00.751 +02:00  INF  Executing endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.Create (Matrix42SimpleBlogProject.Api)'
+2022-09-11 13:13:00.893 +02:00  INF  Route matched with {action = "Create", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(Matrix42SimpleBlogProject.Application.Features.Blogs.Commands.CreateBlog.CreateBlogCommand) on controller Matrix42SimpleBlogProject.Api.Controllers.BlogController (Matrix42SimpleBlogProject.Api).
+2022-09-11 13:13:08.111 +02:00  INF  Entity Framework Core 6.0.8 initialized 'BlogProjectDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-11 13:13:10.137 +02:00  INF  Executed DbCommand (235ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = DateTime), @p4='?', @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO blogs (id, created_date, description, last_modified_date, name, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2022-09-11 13:13:10.311 +02:00  INF  New blog with id 08a620fa-8e20-4beb-bacc-29729c70642b created
+2022-09-11 13:13:10.369 +02:00  INF  Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-09-11 13:13:10.402 +02:00  INF  Executed action Matrix42SimpleBlogProject.Api.Controllers.BlogController.Create (Matrix42SimpleBlogProject.Api) in 9492.2404ms
+2022-09-11 13:13:10.406 +02:00  INF  Executed endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.Create (Matrix42SimpleBlogProject.Api)'
+2022-09-11 13:13:10.435 +02:00  INF  Request finished HTTP/2 POST https://localhost:7268/api/Blog/Create application/json 101 - 200 - application/json;+charset=utf-8 9733.3623ms
+2022-09-11 14:41:01.769 +02:00  INF  Now listening on: https://localhost:7268
+2022-09-11 14:41:02.045 +02:00  INF  Now listening on: http://localhost:5268
+2022-09-11 14:41:02.069 +02:00  INF  Application started. Press Ctrl+C to shut down.
+2022-09-11 14:41:02.070 +02:00  INF  Hosting environment: Development
+2022-09-11 14:41:02.070 +02:00  INF  Content root path: C:\Users\daviesem\source\repos\Matrix42SimpleBlogProject\Matrix42SimpleBlogProject.Api\
+2022-09-11 14:42:03.056 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/index.html - -
+2022-09-11 14:42:10.230 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 14:42:10.305 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_vs/browserLink - -
+2022-09-11 14:42:11.044 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/index.html - - - 200 - text/html;charset=utf-8 7301.1156ms
+2022-09-11 14:42:11.151 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 921.4660ms
+2022-09-11 14:42:13.498 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3192.1820ms
+2022-09-11 14:42:13.792 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - -
+2022-09-11 14:42:14.455 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 662.9564ms
+2022-09-11 14:42:29.089 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/index.html - -
+2022-09-11 14:42:29.255 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/index.html - - - 200 - text/html;charset=utf-8 197.1832ms
+2022-09-11 14:42:29.302 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 14:42:29.315 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.9990ms
+2022-09-11 14:42:29.505 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_vs/browserLink - -
+2022-09-11 14:42:29.606 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.9245ms
+2022-09-11 14:42:30.125 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - -
+2022-09-11 14:42:30.159 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 34.6474ms
+2022-09-11 16:04:39.617 +02:00  INF  Now listening on: https://localhost:7268
+2022-09-11 16:04:39.786 +02:00  INF  Now listening on: http://localhost:5268
+2022-09-11 16:04:39.794 +02:00  INF  Application started. Press Ctrl+C to shut down.
+2022-09-11 16:04:39.794 +02:00  INF  Hosting environment: Development
+2022-09-11 16:04:39.794 +02:00  INF  Content root path: C:\Users\daviesem\source\repos\Matrix42SimpleBlogProject\Matrix42SimpleBlogProject.Api\
+2022-09-11 16:04:42.899 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/index.html - -
+2022-09-11 16:04:44.409 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 16:04:45.932 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_vs/browserLink - -
+2022-09-11 16:04:45.946 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/index.html - - - 200 - text/html;charset=utf-8 3056.1786ms
+2022-09-11 16:04:45.946 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 1531.9864ms
+2022-09-11 16:04:46.154 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 222.4761ms
+2022-09-11 16:04:46.394 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - -
+2022-09-11 16:04:46.821 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 426.8901ms
+2022-09-11 16:08:27.794 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/api/Blog/GetAllBlogs - -
+2022-09-11 16:08:27.873 +02:00  INF  Executing endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api)'
+2022-09-11 16:08:27.957 +02:00  INF  Route matched with {action = "GetAllBlogs", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Matrix42SimpleBlogProject.Application.Features.Blog.Queries.GetBlogsList.BlogListVm]]] GetAllBlogs() on controller Matrix42SimpleBlogProject.Api.Controllers.BlogController (Matrix42SimpleBlogProject.Api).
+2022-09-11 16:08:35.401 +02:00  INF  Entity Framework Core 6.0.8 initialized 'BlogProjectDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-11 16:08:37.485 +02:00  INF  Executed DbCommand (297ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT b.id, b.created_date, b.description, b.last_modified_date, b.name, b.user_id
+FROM blogs AS b
+2022-09-11 16:08:37.936 +02:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Matrix42SimpleBlogProject.Application.Features.Blog.Queries.GetBlogsList.BlogListVm, Matrix42SimpleBlogProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-11 16:08:38.515 +02:00  INF  Executed action Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api) in 10520.4603ms
+2022-09-11 16:08:38.520 +02:00  INF  Executed endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api)'
+2022-09-11 16:08:38.551 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/api/Blog/GetAllBlogs - - - 200 - application/json;+charset=utf-8 10783.8903ms
+2022-09-11 17:00:08.730 +02:00  INF  Now listening on: https://localhost:7268
+2022-09-11 17:00:08.857 +02:00  INF  Now listening on: http://localhost:5268
+2022-09-11 17:00:08.868 +02:00  INF  Application started. Press Ctrl+C to shut down.
+2022-09-11 17:00:08.868 +02:00  INF  Hosting environment: Development
+2022-09-11 17:00:08.868 +02:00  INF  Content root path: C:\Users\daviesem\source\repos\Matrix42SimpleBlogProject\Matrix42SimpleBlogProject.Api\
+2022-09-11 17:00:14.372 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/index.html - -
+2022-09-11 17:00:18.569 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 17:00:18.579 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/index.html - - - 200 - text/html;charset=utf-8 4214.1649ms
+2022-09-11 17:00:18.605 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 35.2937ms
+2022-09-11 17:00:18.772 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_vs/browserLink - -
+2022-09-11 17:00:18.864 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.3590ms
+2022-09-11 17:00:19.297 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - -
+2022-09-11 17:00:20.197 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 899.8307ms
+2022-09-11 17:00:48.492 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/api/Blog/GetAllBlogs - -
+2022-09-11 17:00:48.551 +02:00  INF  Executing endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api)'
+2022-09-11 17:00:48.643 +02:00  INF  Route matched with {action = "GetAllBlogs", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Matrix42SimpleBlogProject.Application.Features.Blog.Queries.GetBlogsList.BlogListVm]]] GetAllBlogs() on controller Matrix42SimpleBlogProject.Api.Controllers.BlogController (Matrix42SimpleBlogProject.Api).
+2022-09-11 17:00:54.624 +02:00  INF  Entity Framework Core 6.0.8 initialized 'BlogProjectDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-11 17:01:09.895 +02:00  INF  Executed DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT b.id, b.created_date, b.description, b.last_modified_date, b.name, b.user_id
+FROM blogs AS b
+2022-09-11 17:01:10.289 +02:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Matrix42SimpleBlogProject.Application.Features.Blog.Queries.GetBlogsList.BlogListVm, Matrix42SimpleBlogProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-11 17:01:10.402 +02:00  INF  Executed action Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api) in 21678.7524ms
+2022-09-11 17:01:10.406 +02:00  INF  Executed endpoint 'Matrix42SimpleBlogProject.Api.Controllers.BlogController.GetAllBlogs (Matrix42SimpleBlogProject.Api)'
+2022-09-11 17:01:10.433 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/api/Blog/GetAllBlogs - - - 200 - application/json;+charset=utf-8 21942.2492ms
+2022-09-11 17:01:28.263 +02:00  INF  Request starting HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - -
+2022-09-11 17:01:28.267 +02:00  INF  Request finished HTTP/2 GET https://localhost:7268/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 4.7888ms

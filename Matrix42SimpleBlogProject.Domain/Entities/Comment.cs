@@ -1,15 +1,12 @@
-﻿namespace Matrix42SimpleBlogProject.Domain
+﻿using Matrix42SimpleBlogProject.Domain.Common;
+
+namespace Matrix42SimpleBlogProject.Domain.Entities
 {
-    public class Comment
+    public class Comment : AuditableEntity
     {
-        public string Content { get; set; }
-
-        public Comment(string content)
-        {
-            Content = content;
-        }
-
-        public DateTime CreatedDate { get; set; }
+        public Guid BlogPostId { get; set; }
+        public string Content { get; set; } = string.Empty;
+        public Guid UserId { get; set; }
 
     }
 }

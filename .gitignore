@@ -1,2 +1,15 @@
 ﻿.vs
 Matrix42SimpleBlogProject.Domain/obj
+Matrix42SimpleBlogProject.Api/bin
+Matrix42SimpleBlogProject.Api/obj
+Matrix42SimpleBlogProject.Application/bin
+Matrix42SimpleBlogProject.Application/obj
+Matrix42SimpleBlogProject.Domain/bin
+Matrix42SimpleBlogProject.Persistence/bin
+Matrix42SimpleBlogProject.Persistence/obj
+Matrix42SimpleBlogProject.UnitTest/bin
+Matrix42SimpleBlogProject.UnitTest/obj
+Matrix42SimpleBlogProject.sln.DotSettings.user
+Matrix42SimpleBlogProject.sln.DotSettings.user
+Matrix42SimpleBlogProject.Identity/obj
+Matrix42SimpleBlogProject.Identity/bin

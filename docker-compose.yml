@@ -1,0 +1,52 @@
+version: '3'
+services:
+  flyway:
+    image: flyway/flyway:6.3.1
+    command: -url=jdbc:postgresql://matrix42-blog-db:5432/blog_project -schemas=public -user=example-username -password=password -connectRetries=60 migrate
+    volumes:
+      - ./migration:/flyway/sql
+    networks:
+      - fullstack
+    depends_on:
+      - matrix42-blog-db
+  matrix42-blog-db:
+    image: postgres:12.2
+    restart: always
+    ports:
+    - "5432:5432"
+    environment:
+    - POSTGRES_USER=example-username
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_DB=blog_project
+    networks:
+    - fullstack
+  data-seeder:
+    image: postgres
+    command: bash -c "psql -h matrix42-blog-db -U example-username -d blog_project -v ON_ERROR_STOP=on -f /SeedData.sql"
+    volumes:
+      - "./SeedData.sql:/SeedData.sql"
+    environment:
+      - PGPASSWORD=password
+    restart: on-failure
+    networks:
+      - fullstack
+    depends_on:
+      - matrix42-blog-db
+      - flyway
+  matrix42-simple-blog-project:
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ../logs:/app/logs
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - fullstack
+    depends_on:
+      - matrix42-blog-db
+networks:
+  fullstack:
+    driver: bridge
